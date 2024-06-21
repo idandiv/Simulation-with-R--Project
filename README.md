@@ -1,17 +1,33 @@
-This project simulates a zoo hospital where pets, horses, and wild animals receive treatment.
+# Veterinary Hospital Simulation Project
 
-Here's a summary of the key aspects:
+## Overview
+Simulation model of the University Veterinary Hospital using R and the Simmer package to analyze and improve efficiency.
 
-Animals: The simulation handles three types - pets, horses, and wild animals.
+## System Description
+- **Processes**: Handles emergency services, routine treatments, and cosmetic treatments.
+- **Entities**: Pets, wild animals, and horses.
 
-Treatments: Animals undergo regular checkups, potentially followed by surgery, medication, vaccines, or cosmetic treatments.
+## Key Components
+- **Reception**: Initial registration of animals.
+- **Emergency Vet**: Handles urgent care and potential surgeries.
+- **Routine Treatment**: Regular check-ups and vaccinations.
+- **Cosmetic Treatment**: Grooming and other non-medical treatments.
+- **Database**: Logs details of treatments and waits.
 
-Resources: The hospital has limited resources like vets (regular and emergency), nurses, beds in the emergency room, and treatment rooms.
+## Goals
+- Improve efficiency by reducing wait times and optimizing resource allocation.
+- Enhance customer satisfaction and hospital profitability.
 
-Trajectories: Each animal type follows a specific path through the hospital, considering resource availability and treatment needs. The code defines these paths with decision points.
+## Simulation Details
+- **Model**: Built using Simmer in R.
+- **Metrics**: Average wait times, queue lengths, and payments.
 
-Generators: The simulation generates animal arrivals at different times and frequencies.
+## How to Run
+1. Load the necessary R packages (`simmer`, `dplyr`, etc.).
+2. Initialize the simulation with `reset(ZooHospital)` and run with `run(until=simulationTime)`.
+3. Analyze results using provided functions and plots.
 
-Outputs: The code collects data on animal attributes (payment, time spent) and resource usage, allowing for calculating metrics like average wait time and cost per animal.
-
-This simulation can help analyze hospital operations, identify bottlenecks, and optimize resource allocation for better animal care.
+## Submission Notes
+- Include all scripts and data files.
+- Document code with comments.
+- Package the project directory into a ZIP file for submission.
